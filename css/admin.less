@@ -1,0 +1,264 @@
+
+body {
+	font: 12px Arial, sans-serif;
+}
+
+article {
+	margin: 20px 50px;
+}
+
+#hidden_frame {
+	display: none;
+}
+
+.pictures {
+	img {
+		width: 40px;
+		height: 40px;
+		margin: 2px;
+	}
+}
+
+.nicEditSkin {
+	width: 488px;
+	margin: 5px;
+	border: 1px solid #000;
+	.textareaPanel {
+		.nicEdit-panelContain {
+			border: none !important;
+		}
+	}
+	.textareaInstance {
+		height: 200px;
+		background: #FFF;
+		padding: 10px;
+		overflow: auto;
+		img {
+			width: 450px;
+		}
+	}
+	.textareaInstance:focus {
+		outline: none;
+	}
+}
+
+article .states {
+	margin-bottom: 10px;
+}
+
+.black_cloud {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	background: rgba(0, 0, 0, .6);
+	z-index: 1000;
+	display: none;
+	overflow-y: auto;
+	
+	.info {
+		color: #DC6200;
+		background: #FFF6DE url(../admin/img/sprite.png) no-repeat 18px -975px;
+		margin: 0 5px;
+		margin-right: 15px;
+		height: 35px;
+		padding-left: 55px;
+		padding-right: 5px;
+		line-height: 35px;
+	}
+	
+	.form_aligner {
+		background: #fff;
+		background: rgba(255, 255, 255, .5);
+		padding: 10px;
+		width: 500px;
+		color: #000;
+		text-align: left;
+		position: relative;
+	}
+	
+	form {
+		
+		div.input {
+			margin: 5px;
+		}
+		textarea {
+			height: 200px;
+			min-width: 468px;
+			max-width: 468px;
+			padding: 10px;
+			display: none;
+		}
+		input[type=checkbox] {
+			display: inline-block;
+			width: auto;
+		}
+		input {
+			height: 20px;
+			font: 13px Arial, sans-serif;
+			padding: 0 10px;
+		}
+		img.newspic {
+			display: none;
+			max-width: 100%;
+		}
+	}
+		input, textarea {
+			display: block;
+			width: 468px;
+			background: #fff;
+			border: 1px solid #111;
+			margin: 5px;
+			margin-right: 15px;
+		}
+		input[type=submit] {
+			background-color: #0D1933;
+			color: #C1D5F7;
+			width: 200px;
+			cursor: pointer;
+			margin: 0 auto;
+		}
+}
+
+.new_record {
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	cursor: pointer;
+	margin: 10px 0;
+	
+	-webkit-transition: text-indent .2s;
+	-moz-transition: text-indent .2s;
+	-ms-transition: text-indent .2s;
+	-o-transition: text-indent .2s;
+	transition: text-indent .2s;
+}
+.new_record:hover {
+	text-indent: 10px;
+}
+
+.datatable {
+	width: 100%;
+	min-width: 500px;
+	position: relative;
+	min-height: 100px;
+	
+	.btns {
+		width: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: inherit;
+		white-space: nowrap;
+		.btn {
+			width: 50%;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.btn:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	.textcentered {
+		text-align: center;
+	}
+	
+	td {
+		padding: 0 5px;
+	}
+	
+	tr {
+		height: 30px;
+		font-size: 16px;
+		position: relative;
+	}
+	tr:hover {
+		.btns {
+			width: 100px;
+			left: -100px;
+		}
+	}
+		tr.inactive {
+			background-color: #FFE8DC;
+		}
+	
+	tbody {
+		tr:hover {
+			background-color: #E8EAFF !important;
+		}
+		tr.inactive:hover {
+			background-color: #FFDCD8 !important;
+		}
+	}
+		td {
+			
+		}
+		
+		.del {
+			width: 0;
+		}
+		.mod {
+			width: 0;
+		}
+	
+	thead {
+		tr {
+			background-color: #33333B;
+			color: #fff;
+			overflow: hidden;
+		}
+			td.active {
+				width: 60px;
+			}
+			
+			td.small {
+				width: 150px;
+			}
+			td.mod, td.del, td.btn {
+				width: 70px;
+				cursor: pointer;
+			}
+	}
+	
+		td {
+			overflow: hidden;
+		}
+		td.small, td.active, td.mod, td.del, td.btn {
+			text-align: center;
+		}
+	tbody {
+		td.mod, td.del, td.btn {
+			cursor: pointer;
+		}
+		td.mod:hover, td.del:hover, td.btn:hover {
+			background-color: #D2D9F0;
+			color: #868A99;
+		}
+	}
+}
+
+
+/* Centering */
+	/* This parent can be any width and height */
+	.centering_parent {
+	  text-align: center;
+	}
+	 
+	/* The ghost, nudged to maintain perfect centering */
+	.centering_parent:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+
+	/* The element to be centered, can
+	   also be of any width and height */ 
+	.centered_child {
+	  display: inline-block;
+	  vertical-align: middle;
+	}

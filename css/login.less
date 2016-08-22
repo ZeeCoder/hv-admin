@@ -1,0 +1,88 @@
+body {
+	background: #ebf0f2 url(../images/adminbg.png) no-repeat center center;
+	font: 14px Arial, sans-serif;
+	color: #444;
+}
+
+.login_wrapper {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+	form {
+		
+		background: #fefefe;
+		border: 1px solid #d2dce1;
+		border-radius: 3px;
+		width: 340px;
+		margin: 0 auto;
+		text-align: left;
+		margin: 20px;
+		
+		.input_wrapper {
+			background: #f7f9fa;
+			padding: 5px;
+			margin: 30px 20px;
+		}
+			input[type=password], input[type=text] {
+				padding: 0 15px;
+				height: 30px;
+				font-size: 12px;
+				border: 1px solid #d2d9dc;
+				outline: none;
+				width: 258px;
+				margin: 5px 0;
+			}
+			input[type=password]:hover, input[type=password]:active, input[type=password]:focus,input[type=text]:hover, input[type=text]:active, input[type=text]:focus {
+				border-color: #b7d4ea;
+			}
+			
+		.input_wrapper:hover {
+			background: #f2f8fc;
+		}
+		
+		.submit_wrapper {
+			border-top: 1px solid #dde0e8;
+			padding: 20px 0;
+			background-color: #f0f5f7;
+			text-align: right;
+		}
+			input[type=submit]:hover {
+				background: url(../images/adminsubmit_hover.png);
+			}
+			input[type=submit], input[type=submit]:active {
+				background: url(../images/adminsubmit.png);
+				width: 79px;
+				height: 33px;
+				border: none;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+	}
+
+
+
+/* Centering */
+	/* This parent can be any width and height */
+	.centering_parent {
+	  text-align: center;
+	}
+	 
+	/* The ghost, nudged to maintain perfect centering */
+	.centering_parent:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+
+	/* The element to be centered, can
+	   also be of any width and height */ 
+	.centered_child {
+	  display: inline-block;
+	  vertical-align: middle;
+	}
